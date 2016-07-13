@@ -20,4 +20,14 @@ describe( 'Bear', function(){
     assert.equal( 550, bear1.weight );
   })
 
+  it('should roar', function(){
+    var bear1 = new Bear(24, 'black', 550);
+    assert.equal("ROOOAAARRRR!!!", bear1.roar())
+  })
+
+  it('should gain weight after eating', function(){
+    var bear1 = new Bear(24, 'black', 550);
+    assert.equal(560, bear1.eat());
+  })
+
 })

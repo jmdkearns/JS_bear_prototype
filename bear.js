@@ -9,7 +9,7 @@ var Bear = function(age, type, weight){
 Bear.prototype = {
 
   roar: function(){
-    console.log("ROOOAAARRRR!!!");
+    return "ROOOAAARRRR!!!";
   },
 
   eat: function(){
